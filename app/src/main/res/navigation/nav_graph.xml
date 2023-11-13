@@ -3,24 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_res"
-    app:startDestination="@id/blankFragment">
+    app:startDestination="@id/userProfileFragment">
     <fragment
-        android:id="@+id/blankFragment"
-        android:name="com.example.mostri_in_tasca.BlankFragment"
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.mostri_in_tasca.Profile.UserProfileFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_user_profile">
         <action
-            android:id="@+id/action_blankFragment_to_placeholder"
-            app:destination="@id/placeholder" />
+            android:id="@+id/action_userProfileFragment_to_userArtifactsFragment"
+            app:destination="@id/userArtifactsFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_modifyProfileFragment"
+            app:destination="@id/modifyProfileFragment" />
     </fragment>
-    <fragment android:id="@+id/placeholder" >
+    <fragment
+        android:id="@+id/userArtifactsFragment"
+        android:name="com.example.mostri_in_tasca.UserArtifacts.UserArtifactsFragment"
+        android:label="fragment_user_artifacts"
+        tools:layout="@layout/fragment_user_artifacts" >
         <action
-            android:id="@+id/action_placeholder_to_placeholder2"
-            app:destination="@id/placeholder2" />
+            android:id="@+id/action_userArtifactsFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
     </fragment>
-    <fragment android:id="@+id/placeholder2" >
+    <fragment
+        android:id="@+id/modifyProfileFragment"
+        android:name="com.example.mostri_in_tasca.EditProfile.ModifyProfileFragment"
+        android:label="fragment_modify_profile"
+        tools:layout="@layout/fragment_modify_profile" >
         <action
-            android:id="@+id/action_placeholder2_to_blankFragment"
-            app:destination="@id/blankFragment" />
+            android:id="@+id/action_modifyProfileFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
     </fragment>
 </navigation>

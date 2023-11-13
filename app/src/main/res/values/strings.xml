@@ -2,4 +2,13 @@
     <string name="app_name">Mostri_in_Tasca</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="punti_vita">Punti vita</string>
+    <string name="armatura">Armatura</string>
+    <string name="lv_23">lv 23</string>
+    <string name="lv_19">lv 19</string>
+    <string name="amuleto">Amuleto</string>
+    <string name="arma">Arma</string>
+    <string name="louis_mario">Louis Mario</string>
+    <string name="_2045_punti_esperienza">2045 punti esperienza</string>
+    <string name="condividi_la_posizione_con_i_tuoi_amici">Condividi la posizione con i tuoi amici</string>
 </resources>
